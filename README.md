@@ -4,6 +4,21 @@
 Nodejs
 Jest
 
+# Demo
+The Link to publish demo http://movieapi.rebollo.tech/api-docs/
+
+You can download the public container from gitlab registry.gitlab.com/rodolforb/exam-movie-api
+
+------------
+	docker-compose.yml
+	version: '3'
+	services:
+	  movieapi:
+		image: registry.gitlab.com/rodolforb/exam-movie-api:latest
+		ports:
+		  -- 4000:4000
+------------
+
 # Nodejs 14.16
 https://nodejs.org/en/
 
