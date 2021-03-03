@@ -5,7 +5,7 @@ Nodejs
 Jest
 
 # Demo
-The Link to publish demo http://movieapi.rebollo.tech/api-docs/
+The Link to publish demo https://movieapi.rebollo.tech/api-docs/
 
 You can download the public container from gitlab registry.gitlab.com/rodolforb/exam-movie-api
 
@@ -18,6 +18,9 @@ You can download the public container from gitlab registry.gitlab.com/rodolforb/
 		ports:
 		  -- 4000:4000
 ------------
+
+# Swagger exam-movie-api
+https://movieapi.rebollo.tech/api-docs/
 
 # Nodejs 14.16
 https://nodejs.org/en/
