@@ -1,0 +1,70 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Movie api",
+    "version": "0.0.1",
+    "description": "this is a nodejs exam",
+    "license": {
+      "name": "MIT",
+      "url": "https://spdx.org/licenses/MIT.html"
+    },
+    "contact": {
+      "name": "Rodolfo Rebollo Burgueño",
+      "url": "https://github.com/RodolfoRb",
+      "email": "rodolfo.rb@live.com"
+    }
+  },
+  "host": "http://localhost:4000/",
+  "servers": [
+    {
+      "url": "http://localhost:4000/"
+    }
+  ],
+  
+  "paths": {
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "uploads an image",
+        "description": "",
+        "operationId": "register",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "body",
+            "description": "ID of pet to update",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "body",
+            "description": "Additional data to pass to server",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
