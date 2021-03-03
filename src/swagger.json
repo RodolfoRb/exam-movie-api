@@ -3,7 +3,7 @@
   "info": {
     "title": "Movie api",
     "version": "0.0.1",
-    "description": "this is a nodejs exam",
+    "description": "This is a nodejs exam",
     "license": {
       "name": "MIT",
       "url": "https://spdx.org/licenses/MIT.html"
@@ -27,7 +27,7 @@
         "tags": [
           "auth"
         ],
-        "summary": "uploads an image",
+        "summary": "Register a new user",
         "description": "",
         "operationId": "register",
         "consumes": [
@@ -40,26 +40,25 @@
           {
             "name": "username",
             "in": "body",
-            "description": "ID of pet to update",
+            "description": "Username to login",
             "required": true,
             "type": "string"
           },
           {
             "name": "password",
             "in": "body",
-            "description": "Additional data to pass to server",
+            "description": "Password to login",
             "required": true,
             "type": "string"
           }
         ],
         "responses": {
           "200": {
-            "description": "successful operation",
+            "description": "Successful register",
             "schema": {
               "type": "object",
               "properties": {
-                "type": "integer",
-                "format": "int32"
+                "type": "string"
               }
             }
           }
