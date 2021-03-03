@@ -1,0 +1,30 @@
+03-03-2021 10:17:31 AM - crit: SyntaxError: Unexpected token e in JSON at position 19
+    at JSON.parse (<anonymous>)
+    at parse (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+03-03-2021 10:18:23 AM - crit: SyntaxError: Unexpected token e in JSON at position 19
+    at JSON.parse (<anonymous>)
+    at parse (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+03-03-2021 10:20:01 AM - crit: SyntaxError: Unexpected token e in JSON at position 19
+    at JSON.parse (<anonymous>)
+    at parse (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Proyectos\senorpago\examen\exam-movie-api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1327:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
