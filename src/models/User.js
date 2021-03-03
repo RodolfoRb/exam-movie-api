@@ -12,7 +12,7 @@ const userSchema = new Schema(
     versionKey: false,
   }
 );
-userSchema.pre("save", (next) => {
+userSchema.pre("save", function(next) {
   var user = this;
   if (!user.isModified("password")) return next();
   bcrypt.genSalt(SALT_WORK_FACTOR, function (err, salt) {
