@@ -1,0 +1,18 @@
+version: '3.0' # specify docker-compose version
+ 
+# Define the services/ containers to be run
+services:
+ express: # name of the second service
+  build: . # specify the directory of the Dockerfile
+  ports:
+  - "4001:3000" #specify ports mapping
+  links:
+  - database # link this service to the database service
+ database: # name of the third service
+  image: mongo # specify image to build container from
+  ports:
+  - "27017:27017" # specify port forwarding
+  environment:
+  - MONGO_INITDB_ROOT_USERNAME=RodolfoRB
+  - MONGO_INITDB_ROOT_PASSWORD=qUfqwLE3kFjC
+  - MONGO_INITDB_DATABASE=exam-movie
