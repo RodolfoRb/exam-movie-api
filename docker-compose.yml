@@ -1,0 +1,11 @@
+version: '3.0' # specify docker-compose version
+ 
+# Define the services/ containers to be run
+services:
+ express: # name of the second service
+  build: . # specify the directory of the Dockerfile
+  ports:
+  - "4000:4000" #specify ports mapping
+  volumes:
+  - ./:/usr/src/app # named volume
+  - /usr/src/app/node_modules # anonymous volume for node_modules only

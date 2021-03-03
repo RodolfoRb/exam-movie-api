@@ -1,0 +1,69 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Movie api",
+    "version": "0.0.1",
+    "description": "This is a nodejs exam",
+    "license": {
+      "name": "MIT",
+      "url": "https://spdx.org/licenses/MIT.html"
+    },
+    "contact": {
+      "name": "Rodolfo Rebollo Burgueño",
+      "url": "https://github.com/RodolfoRb",
+      "email": "rodolfo.rb@live.com"
+    }
+  },
+  "host": "http://localhost:4000/",
+  "servers": [
+    {
+      "url": "http://localhost:4000/"
+    }
+  ],
+  
+  "paths": {
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Register a new user",
+        "description": "",
+        "operationId": "register",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "body",
+            "description": "Username to login",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "password",
+            "in": "body",
+            "description": "Password to login",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful register",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
